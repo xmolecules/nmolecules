@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <RootNamespace>NMolecules.Architecture</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Layered\" />
+    <Folder Include="Onion\" />
+  </ItemGroup>
+</Project>
