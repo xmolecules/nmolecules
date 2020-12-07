@@ -3,6 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
     <RootNamespace>NMolecules.DDD</RootNamespace>
+    <Version>0.1.0</Version>
+    <PackageId>NMolecules.DDD</PackageId>
+    <Title>Architectural concepts in .NET</Title>
+    <Authors>odrotbohm;spirnbaum;hschwentner</Authors>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/xmolecules/nmolecules</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
