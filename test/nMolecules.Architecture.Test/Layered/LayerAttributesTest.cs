@@ -1,20 +1,19 @@
 using Xunit;
 using NFluent;
 
-namespace NMolecules.DDD.Test
+namespace NMolecules.Architecture.Layered.Test
 {
-    [ValueObject]
-    struct IBAN
+    [ApplicationLayer]
+    class TransferMoney
     {
     }
 
-    [Entity]
+    [DomainLayer]
     class BankAccount
     {
-        private readonly IBAN iban;
     }
 
-    public class AttributeTest
+    public class LayerAttributesTest
     {
         [Fact]
         public void TestAttributes()

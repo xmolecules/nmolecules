@@ -21,9 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\nMolecules.DDD\nMolecules.DDD.csproj" />
+    <ProjectReference Include="..\..\src\nMolecules.Architecture\nMolecules.Architecture.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Attributes\" />
+    <Folder Include="Layered\" />
+    <Folder Include="Onion\" />
   </ItemGroup>
 </Project>
