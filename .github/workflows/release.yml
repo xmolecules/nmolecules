@@ -16,22 +16,22 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.202'
+        dotnet-version: '5.0.x'
     - name: Install dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Publish nMolecules.Architecture to NuGet
-      uses: brandedoutcast/publish-nuget@v2
+      uses: rohith/publish-nuget@v2
       with:
         PROJECT_FILE_PATH: src/nMolecules.Architecture/nMolecules.Architecture.csproj
-        VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
-        TAG_FORMAT: '*'
-        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        #VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
+        #TAG_FORMAT: '*'
+        #NUGET_KEY: ${{secrets.NUGET_API_KEY}}
     - name: Publish nMolecules.DDD to NuGet
       uses: brandedoutcast/publish-nuget@v2
       with:
         PROJECT_FILE_PATH: src/nMolecules.DDD/nMolecules.DDD.csproj
-        VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
-        TAG_FORMAT: '*'
-        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        #VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
+        #TAG_FORMAT: '*'
+        #NUGET_KEY: ${{secrets.NUGET_API_KEY}}
