@@ -3,6 +3,7 @@ name: nMolecules – CI
 on:
   push:
     branches: [ main ]
+
   pull_request:
     branches: [ main ]
 
@@ -16,14 +17,19 @@ jobs:
             dotnet: [ '2.1.x', '3.1.x', '5.0.x' ]
     
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout source code
+      uses: actions/checkout@v2
+
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: ${{ matrix.dotnet }}
+
     - name: Install dependencies
       run: dotnet restore
+
     - name: Build
       run: dotnet build --configuration Release --no-restore
+
     - name: Test
       run: dotnet test --no-restore --verbosity normal
