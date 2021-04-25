@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
     <RootNamespace>NMolecules.Architecture</RootNamespace>
-    <Version>0.0.1</Version>
-    <PackageId>NMolecules.DDD</PackageId>
+    <Version>0.0.2</Version>
+    <PackageId>NMolecules.Architecture</PackageId>
     <Title>Architectural concepts in .NET</Title>
     <Authors>odrotbohm;spirnbaum;hschwentner</Authors>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
