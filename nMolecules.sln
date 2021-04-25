@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.Architecture", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.DDD.Test", "tests\nMolecules.DDD.Test\nMolecules.DDD.Test.csproj", "{C4CF3361-645D-41CF-B451-022D341268B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.Architecture.Test", "test\nMolecules.Architecture.Test\nMolecules.Architecture.Test.csproj", "{2C1DCAA8-1B7A-4358-9B5D-6ADD103DEB72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.Architecture.Test", "tests\nMolecules.Architecture.Test\nMolecules.Architecture.Test.csproj", "{2C1DCAA8-1B7A-4358-9B5D-6ADD103DEB72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
