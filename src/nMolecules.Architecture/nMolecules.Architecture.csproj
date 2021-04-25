@@ -14,7 +14,7 @@
 </PropertyGroup>
 
   <ItemGroup>
-    <None Include="images\caffeine-molecule.png" Pack="true" PackagePath=""/>
+    <None Include="..\..\images\caffeine-molecule.png" Pack="true" PackagePath=""/>
     <Folder Include="Layered\" />
     <Folder Include="Onion\" />
   </ItemGroup>
