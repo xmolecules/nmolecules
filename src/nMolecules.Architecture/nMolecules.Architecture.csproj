@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
     <RootNamespace>NMolecules.Architecture</RootNamespace>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <PackageId>NMolecules.Architecture</PackageId>
     <Title>Architectural concepts in .NET</Title>
     <Authors>odrotbohm;spirnbaum;hschwentner</Authors>
