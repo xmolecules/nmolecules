@@ -41,12 +41,19 @@ TODO: port documentation from jMolecules.
 
 ## Installation
 
-To use nMolecules in your project just install it from the Nuget central repository.
+To use nMolecules in your project just install it from the NuGet Gallery.
 
-TODO
+<https://www.nuget.org/packages/NMolecules.DDD/>
+<https://www.nuget.org/packages/NMolecules.Architecture/>
 
 ## Release instructions
 
-Just increment the version number in one or several .csproj files and the GitHub Actions will take care of it.
+Increment the version number in one or several .csproj files and the GitHub Actions will push a new release to NuGet.
 
-When the secret gets obsolete, generate a new on. See <https://netlicensing.io/blog/2020/09/01/publish-nuget-packages-using-github-actions/>
+Manual steps:
+
+* In GitHub: Create a release that points to the automatically created tag vX.Y.Z
+* In NuGet: Add Readme.
+* In NuGet: unlist old versions.
+
+When the NuGet secret gets obsolete, generate a new on. See <https://netlicensing.io/blog/2020/09/01/publish-nuget-packages-using-github-actions/>
