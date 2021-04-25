@@ -12,10 +12,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-          matrix:
-            dotnet: [ '2.1.x', '3.1.x', '5.0.x' ]
-    
     steps:
     - name: Checkout source code
       uses: actions/checkout@v2
@@ -23,7 +19,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: ${{ matrix.dotnet }}
+        dotnet-version: '5.0.x'
 
     - name: Install dependencies
       run: dotnet restore
