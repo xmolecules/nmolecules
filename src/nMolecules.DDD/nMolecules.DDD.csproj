@@ -3,8 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
     <RootNamespace>NMolecules.DDD</RootNamespace>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <PackageId>NMolecules.DDD</PackageId>
+    <PackageIcon>caffeine-molecule.png</PackageIcon>
     <Title>Architectural concepts in .NET</Title>
     <Authors>odrotbohm;spirnbaum;hschwentner</Authors>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
@@ -13,6 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="images\caffeine-molecule.png" Pack="true" PackagePath=""/>
     <Folder Include="Attributes\" />
   </ItemGroup>
 </Project>
