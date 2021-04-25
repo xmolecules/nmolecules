@@ -1,4 +1,4 @@
-name: nMolecules - Release
+name: nMolecules - Release on new version number
 
 on:
  workflow_run:
@@ -20,17 +20,14 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
-    - name: Publish nMolecules.Architecture to NuGet
+# TODO: whats the difference between rohith/publish-nuget and brandedoutcast/publish-nuget?
+    - name: Publish nMolecules.Architecture to NuGet if version higher
       uses: rohith/publish-nuget@v2
       with:
         PROJECT_FILE_PATH: src/nMolecules.Architecture/nMolecules.Architecture.csproj
-        #VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
-        #TAG_FORMAT: '*'
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-    - name: Publish nMolecules.DDD to NuGet
+    - name: Publish nMolecules.DDD to NuGet if version higher
       uses: brandedoutcast/publish-nuget@v2
       with:
         PROJECT_FILE_PATH: src/nMolecules.DDD/nMolecules.DDD.csproj
-        #VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
-        #TAG_FORMAT: '*'
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
