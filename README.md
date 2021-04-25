@@ -47,4 +47,6 @@ TODO
 
 ## Release instructions
 
-TODO
+Just increment the version number in one or several .csproj files and the GitHub Actions will take care of it.
+
+When the secret gets obsolete, generate a new on. See <https://netlicensing.io/blog/2020/09/01/publish-nuget-packages-using-github-actions/>

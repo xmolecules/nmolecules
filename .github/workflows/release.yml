@@ -1,12 +1,12 @@
 name: nMolecules - Release
 
 on:
-#  workflow_run:
-#    workflows: ["nMolecules – CI"]
-#    branches: [ main ]
-#    types:
-#      - completed
-  workflow_dispatch:
+ workflow_run:
+   workflows: ["nMolecules – CI"]
+   branches: [ main ]
+   types:
+     - completed
+#  workflow_dispatch:
 
 jobs:
   publish-nuget:
@@ -27,11 +27,11 @@ jobs:
         PROJECT_FILE_PATH: src/nMolecules.Architecture/nMolecules.Architecture.csproj
         #VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
         #TAG_FORMAT: '*'
-        #NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
     - name: Publish nMolecules.DDD to NuGet
       uses: brandedoutcast/publish-nuget@v2
       with:
         PROJECT_FILE_PATH: src/nMolecules.DDD/nMolecules.DDD.csproj
         #VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
         #TAG_FORMAT: '*'
-        #NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
