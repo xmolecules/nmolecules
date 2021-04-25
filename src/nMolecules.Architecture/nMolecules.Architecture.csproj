@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
     <RootNamespace>NMolecules.Architecture</RootNamespace>
-    <Version>0.0.4</Version>
+    <Version>0.0.5</Version>
     <PackageId>NMolecules.Architecture</PackageId>
     <PackageIcon>caffeine-molecule.png</PackageIcon>
     <Title>Architectural concepts in .NET</Title>
@@ -15,6 +15,10 @@
 
   <ItemGroup>
     <None Include="..\..\images\caffeine-molecule.png" Pack="true" PackagePath=""/>
+    <Content Include="..\..\README.md">
+      <Pack>true</Pack>
+      <PackagePath>README.md</PackagePath>
+    </Content>
     <Folder Include="Layered\" />
     <Folder Include="Onion\" />
   </ItemGroup>
