@@ -1,4 +1,4 @@
-# nMolecules – Architectural abstractions for .NET
+# nMolecules – Architectural Abstractions for .NET
 
 A set of libraries to help developers work with architectural concepts in .NET.
 Member of the xMolecules family.
@@ -8,7 +8,7 @@ Goals:
 * Make it easy for the human reader to determine what kind of architectural concepts a given piece of code is.
 * Allow tool integration (to do interesting stuff like generating persistence or static architecture analysis to check for validations of the architectural rules.)
 
-## Expressing DDD concepts
+## Expressing DDD Concepts
 
 Example:
 
@@ -33,7 +33,7 @@ Instead, we want `BankAccount`, `Currency` and `Accounts` – like in the exampl
 Still, we want to express that a given class (or other architectural element) is a special building block; i.e. uses a design pattern.
 nMolecules provide a set of standard annotations for the building blocks known from DDD.
 
-## Expressing architecture
+## Expressing Architecture
 
 jMolecules provides annotations to mark a package as a layer (or ring):
 
@@ -46,7 +46,7 @@ To use nMolecules in your project just install it from the NuGet Gallery.
 <https://www.nuget.org/packages/NMolecules.DDD/>
 <https://www.nuget.org/packages/NMolecules.Architecture/>
 
-## Release instructions
+## Release Instructions
 
 Increment the version number in one or several .csproj files and the GitHub Actions will push a new release to NuGet.
 
