@@ -5,7 +5,7 @@
     <RootNamespace>NMolecules.Architecture</RootNamespace>
     <Version>0.1.1</Version>
     <PackageId>NMolecules.Architecture</PackageId>
-    <PackageDescription>A set of libraries to help developers work with architectural concepts in .NET. Member of the xMolecules family.</PackageDescription>
+    <PackageDescription>A library to annotate architectural styles (layered architecture, onion architecture) in .NET. Member of the xMolecules family.</PackageDescription>
     <PackageIcon>caffeine-molecule.png</PackageIcon>
     <Title>Architectural concepts in .NET</Title>
     <Authors>Oliver Drotbohm, Stephan Pirnbaum, Henning Schwentner</Authors>

@@ -5,9 +5,10 @@
     <RootNamespace>NMolecules.DDD</RootNamespace>
     <Version>0.1.0</Version>
     <PackageId>NMolecules.DDD</PackageId>
+    <PackageDescription>A library to annotate DDD concepts (ValueObject, Entity, etc.) in .NET. Member of the xMolecules family.</PackageDescription>
     <PackageIcon>caffeine-molecule.png</PackageIcon>
     <Title>Architectural concepts in .NET</Title>
-    <Authors>odrotbohm;spirnbaum;hschwentner</Authors>
+    <Authors>Oliver Drotbohm, Stephan Pirnbaum, Henning Schwentner</Authors>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/xmolecules/nmolecules</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
