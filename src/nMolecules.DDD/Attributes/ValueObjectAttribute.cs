@@ -10,6 +10,7 @@ namespace NMolecules.DDD
     /// </summary>
     [AttributeUsage(
         AttributeTargets.Class |
+        AttributeTargets.Enum |
         AttributeTargets.Struct)]
     public class ValueObjectAttribute : Attribute
     {
