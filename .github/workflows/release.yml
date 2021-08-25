@@ -31,3 +31,8 @@ jobs:
       with:
         PROJECT_FILE_PATH: src/nMolecules.DDD/nMolecules.DDD.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+    - name: Publish nMolecules.Events to NuGet if version higher
+      uses: brandedoutcast/publish-nuget@v2
+      with:
+        PROJECT_FILE_PATH: src/nMolecules.Events/nMolecules.Events.csproj
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}

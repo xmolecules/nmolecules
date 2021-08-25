@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.808.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.DDD", "src\nMolecules.DDD\nMolecules.DDD.csproj", "{E8D9FD45-D451-46FF-9293-E592DD6D5452}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C4FEFA4F-F663-4A88-9817-1BFB528F7EB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.Architecture", "src\nMolecules.Architecture\nMolecules.Architecture.csproj", "{E4A9ECE7-3AB1-4DE3-9D67-47ADF9525295}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{39DC4C6E-0D38-4977-9961-AD5A16CD51C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.DDD", "src\nMolecules.DDD\nMolecules.DDD.csproj", "{E8D9FD45-D451-46FF-9293-E592DD6D5452}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.DDD.Test", "tests\nMolecules.DDD.Test\nMolecules.DDD.Test.csproj", "{C4CF3361-645D-41CF-B451-022D341268B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.Architecture", "src\nMolecules.Architecture\nMolecules.Architecture.csproj", "{E4A9ECE7-3AB1-4DE3-9D67-47ADF9525295}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.Architecture.Test", "tests\nMolecules.Architecture.Test\nMolecules.Architecture.Test.csproj", "{2C1DCAA8-1B7A-4358-9B5D-6ADD103DEB72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.Events", "src\nMolecules.Events\nMolecules.Events.csproj", "{C5885C5B-7328-4780-86C8-12F3D4E878B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nMolecules.Events.Test", "tests\nMolecules.Events.Test\nMolecules.Events.Test.csproj", "{39D24727-8592-43C7-9BBA-9AC833A393C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,11 +41,23 @@ Global
 		{2C1DCAA8-1B7A-4358-9B5D-6ADD103DEB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C1DCAA8-1B7A-4358-9B5D-6ADD103DEB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C1DCAA8-1B7A-4358-9B5D-6ADD103DEB72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5885C5B-7328-4780-86C8-12F3D4E878B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5885C5B-7328-4780-86C8-12F3D4E878B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5885C5B-7328-4780-86C8-12F3D4E878B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5885C5B-7328-4780-86C8-12F3D4E878B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39D24727-8592-43C7-9BBA-9AC833A393C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D24727-8592-43C7-9BBA-9AC833A393C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D24727-8592-43C7-9BBA-9AC833A393C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D24727-8592-43C7-9BBA-9AC833A393C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA898276-BA17-4023-BD9E-768E60258423}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C5885C5B-7328-4780-86C8-12F3D4E878B2} = {C4FEFA4F-F663-4A88-9817-1BFB528F7EB8}
+		{39D24727-8592-43C7-9BBA-9AC833A393C4} = {39DC4C6E-0D38-4977-9961-AD5A16CD51C3}
 	EndGlobalSection
 EndGlobal

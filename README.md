@@ -33,6 +33,10 @@ Instead, we want `BankAccount`, `Currency` and `Accounts` – like in the exampl
 Still, we want to express that a given class (or other architectural element) is a special building block; i.e. uses a design pattern.
 nMolecules provide a set of standard annotations for the building blocks known from DDD.
 
+## Expressing Eventing Concepts
+
+TODO
+
 ## Expressing Architecture
 
 jMolecules provides annotations to mark a package as a layer (or ring):
