@@ -48,6 +48,7 @@ TODO: port documentation from jMolecules.
 To use nMolecules in your project just install it from the NuGet Gallery.
 
 <https://www.nuget.org/packages/NMolecules.DDD/>
+<https://www.nuget.org/packages/NMolecules.Events/>
 <https://www.nuget.org/packages/NMolecules.Architecture/>
 
 ## Release Instructions
