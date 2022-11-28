@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NMolecules.DDD.Attributes
+namespace NMolecules.DDD
 {
     /// <summary>
     /// Identifies an aggregate root, i.e. the root entity of an aggregate.An aggregate forms a cluster of consistent rules

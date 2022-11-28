@@ -1,5 +1,5 @@
 ﻿using System;
-namespace NMolecules.DDD.Attributes
+namespace NMolecules.DDD
 {
     /// <summary>
     /// Identifies a Factory. Factories encapsulate the responsibility of creating complex objects in general and
