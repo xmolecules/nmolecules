@@ -1,7 +1,7 @@
 using Xunit;
 using NFluent;
 
-namespace NMolecules.DDD.Test
+namespace NMolecules.DDD
 {
     [ValueObject]
     struct IBAN
@@ -11,7 +11,10 @@ namespace NMolecules.DDD.Test
     [Entity]
     class BankAccount
     {
+        #pragma warning disable CS0169 // The field is never used
+        [Identity]
         private readonly IBAN iban;
+        #pragma warning restore CS0169
     }
 
     public class DDDAttributesTest

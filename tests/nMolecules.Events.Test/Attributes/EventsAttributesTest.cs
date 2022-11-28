@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using NFluent;
 
-namespace NMolecules.Events.Test
+namespace NMolecules.Events
 {
     [DomainEvent]
     class AccountOpened
@@ -12,8 +12,10 @@ namespace NMolecules.Events.Test
     [DomainEventPublisher]
     class MoneyTransferredPublisher
     {
+        #pragma warning disable CS0067 // The event is never used
         [DomainEvent]
         event MoneyTransferredHandler MoneyTransferred;
+        #pragma warning restore CS0067
     }
 
     [DomainEventHandler]
