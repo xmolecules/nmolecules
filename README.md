@@ -16,13 +16,19 @@ Example:
 using NMolecules.DDD;
 
 [Entity]
-public class BankAccount { /* ... */ }
+public class BankAccount
+{
+    [Identity]
+    public IBAN IBAN { get; }
+
+    /* ... */
+}
 
 [ValueObject]
-public class Currency { /* ... */ }
+public readonly record struct Currency { /* ... */ }
 
 [Repository]
-public class Accounts { /* ... */ }
+public interface Accounts { /* ... */ }
 ```
 
 When we take Ubiquitous Language serious, we want names (for classes, methods, etc.) that only contain words from the domain language.
